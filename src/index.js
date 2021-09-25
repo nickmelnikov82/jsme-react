@@ -70,7 +70,7 @@ export class Jsme extends React.PureComponent {
         this.jsmeApplet.setSize(this.props.width, this.props.height)
       }
       if (this.props.options !== prevProps.options) {
-        this.jsmeApplet.options({options: this.props.options})
+        this.jsmeApplet.options(this.props.options)
       }
       if (this.props.smiles !== prevProps.smiles) {
         this.jsmeApplet.readGenericMolecularInput(this.props.smiles)
